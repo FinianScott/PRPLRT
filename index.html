@@ -1,3 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Random Message</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	
+<script type="text/javascript">
+	var msgArr = new Array();
+	msgArr[0] = "Frig yee";
+	msgArr[1] = "Nah";
+	msgArr[2] = "Eh"
+	window.onload = function () {
+		document.getElementById("msgDiv").innerHTML = msgArr[Math.floor(Math.random()*msgArr.length)];
+	}
+</script>
+</head>
+
+<body>
+<p> Party Rock this Weekend???</p>
+<b>
+<div id="msgDiv"></div>
+</b>
+<br>
 <h>The List</h1>
 <ul> 
 	<li>1. Jacob Kowalski</li>
@@ -11,3 +34,7 @@
 	<li>9. Emma Stark</li>
 	<li>...</li>
 	<li>50. Matt Nowak</li>
+</ul>
+<div id="msgDiv"></div>
+</body>
+</html>
